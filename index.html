@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sozehoue Kocou Jules | Ingénieur systèmes et logiciels, développeur web, IT Manager</title>
+  <meta name="description" content="Portfolio de Sozehoue Kocou Jules : ingénieur en systèmes informatiques et logiciels, développeur web et IT Manager. Sites web, applications, réseaux et conseil informatique.">
+  <meta name="theme-color" content="#050b1a">
+  <!-- <link rel="canonical" href="https://VOTRE-DOMAINE.com/"> (à activer quand le domaine est connu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Applique le thème avant l'affichage (évite le flash)
+    try { var t = localStorage.getItem('theme'); if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <!-- Tailwind : voir README.md (build de production). Le design repose sur css/style.css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Icônes SVG (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-4h12v4"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-app" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l2 2-2 2M12 13h4"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-board" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M13 9h5M13 14h5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8zM9 8a3 3 0 0 1 6 0"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.5 6 5.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2L9 8.5z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7h.01M12 17v-7M12 13c0-2 1.5-3 3-3s3 1 3 3v4"/></symbol>
+    <symbol id="i-flip" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5l2 2M20 4v5h-5M20 12a8 8 0 0 1-14 5l-2-2M4 20v-5h5"/></symbol>
+  </defs>
+</svg>
+
+<a href="#accueil" class="skip">Aller au contenu</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#accueil" class="brand" aria-label="Sozehoue Kocou Jules, accueil"><span class="brand-mark">SKJ</span><span class="brand-name">Sozehoue Kocou Jules</span></a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#competences" class="nav-link">Compétences</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projets" class="nav-link">Projets</a>
+      <a href="#experience" class="nav-link">Expérience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm cta-desktop">Discutons de votre projet</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Basculer entre mode clair et sombre">
+        <svg class="ico ico-moon"><use href="#i-moon"/></svg><svg class="ico ico-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu">
+        <svg class="ico ico-open"><use href="#i-menu"/></svg><svg class="ico ico-shut"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+
+</header>
+<!-- Menu mobile 3D -->
+  <div class="m-stage">
+    <nav class="m-menu" id="mobileMenu" aria-label="Menu mobile" aria-hidden="true">
+      <a href="#accueil" class="m-link">Accueil</a>
+      <a href="#apropos" class="m-link">À propos</a>
+      <a href="#competences" class="m-link">Compétences</a>
+      <a href="#services" class="m-link">Services</a>
+      <a href="#projets" class="m-link">Projets</a>
+      <a href="#experience" class="m-link">Expérience</a>
+      <a href="#contact" class="m-link">Contact</a>
+      <a href="#contact" class="btn btn-primary m-cta">Discutons de votre projet</a>
+    </nav>
+  </div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="accueil" class="hero" aria-labelledby="h-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="h-hero" class="hero-title">Sozehoue Kocou Jules</h1>
+      <p class="typed" aria-hidden="true"><span class="typed-pre">Je suis </span><span class="typed-word" id="typed"></span><span class="caret"></span></p>
+      <p class="hero-role">Ingénieur en systèmes informatiques et logiciels | Développeur Web | IT Manager</p>
+      <p class="hero-lead">Je conçois des solutions numériques performantes, des applications web modernes et des systèmes informatiques adaptés aux besoins des entreprises.</p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        <a href="#" class="btn btn-wa" data-wa><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="tilt">
+      <div class="card3d">
+        <div class="portrait">
+          <span class="portrait-fallback" aria-hidden="true">SKJ</span>
+          <!-- Votre photo : placez profil.jpg (ou .png / .webp) dans assets/images/ -->
+          <img alt="Portrait de Sozehoue Kocou Jules" width="480" height="560">
+        </div>
+        <span class="chip chip-a"><svg class="ico"><use href="#i-code"/></svg>Web</span>
+        <span class="chip chip-b"><svg class="ico"><use href="#i-net"/></svg>Réseaux</span>
+        <span class="chip chip-c"><svg class="ico"><use href="#i-board"/></svg>IT Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNIVERS TECHNIQUE ============ -->
+<section class="strip" aria-labelledby="h-univ">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-univ" class="h2">Univers technique</h2></header>
+    <div class="carousel c-univ reveal" data-carousel aria-roledescription="carrousel" aria-label="Univers technique">
+      <div class="c-stage">
+<figure class="c-slide scene">
+      <div class="scene-box code-win" aria-hidden="true">
+        <div class="win-bar"><i></i><i></i><i></i><span>app.js</span></div>
+        <pre id="codeType"></pre>
+      </div>
+      <figcaption><span class="ico-box"><svg class="ico"><use href="#i-code"/></svg></span>Développeur</figcaption>
+    </figure>
+<figure class="c-slide scene">
+      <div class="scene-box" aria-hidden="true">
+        <svg class="net" viewBox="0 0 240 150">
+          <g class="net-lines"><path id="p1" d="M120 30 60 100"/><path id="p2" d="M120 30 180 100"/><path id="p3" d="M60 100 180 100"/><path id="p4" d="M120 30 120 120"/><path id="p5" d="M60 100 120 120"/><path id="p6" d="M180 100 120 120"/></g>
+          <circle class="packet" r="3.5"><animateMotion dur="3s" repeatCount="indefinite" path="M120 30 60 100 180 100 120 30"/></circle>
+          <circle class="packet" r="3.5"><animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M60 100 120 120 180 100 120 30 120 120"/></circle>
+          <g class="node"><circle cx="120" cy="30" r="9"/><circle cx="60" cy="100" r="9"/><circle cx="180" cy="100" r="9"/><circle cx="120" cy="120" r="9"/></g>
+          <g class="pulse"><circle cx="120" cy="30" r="9"/><circle cx="60" cy="100" r="9"/><circle cx="180" cy="100" r="9"/><circle cx="120" cy="120" r="9"/></g>
+        </svg>
+      </div>
+      <figcaption><span class="ico-box"><svg class="ico"><use href="#i-net"/></svg></span>Ingénieur systèmes et réseaux</figcaption>
+    </figure>
+<figure class="c-slide scene">
+      <div class="scene-box" aria-hidden="true">
+        <svg class="shield" viewBox="0 0 240 150">
+          <path class="sh-body" d="M120 14 176 34v40c0 34-24 56-56 66-32-10-56-32-56-66V34z"/>
+          <rect class="lock-b" x="102" y="66" width="36" height="30" rx="5"/>
+          <path class="lock-s" d="M108 66v-9a12 12 0 0 1 24 0v9"/>
+          <circle class="lock-k" cx="120" cy="80" r="4"/>
+          <line class="scan" x1="64" x2="176" y1="30" y2="30"/>
+        </svg>
+      </div>
+      <figcaption><span class="ico-box"><svg class="ico"><use href="#i-shield"/></svg></span>Cybersécurité</figcaption>
+    </figure>
+      </div>
+      <div class="c-ctrl">
+        <button class="icon-btn c-prev" type="button" aria-label="Scène précédente"><svg class="ico"><use href="#i-left"/></svg></button>
+        <div class="c-dots" role="tablist" aria-label="Choisir une scène"></div>
+        <button class="icon-btn c-next" type="button" aria-label="Scène suivante"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section id="apropos" class="section" aria-labelledby="h-about">
+  <div class="wrap about">
+    <div class="reveal">
+      <h2 id="h-about" class="h2">À propos</h2>
+      <p class="p">Je suis ingénieur en systèmes informatiques et logiciels. Mes compétences couvrent le développement web, la conception d’applications, les réseaux informatiques, la gestion informatique et la coordination de projets.</p>
+      <p class="p">J’interviens dans la conception de solutions numériques qui répondent à des besoins réels, de l’analyse du besoin jusqu’à la réalisation technique.</p>
+      <p class="p">Je travaille également en équipe avec l’entreprise BeTogether sur la réalisation de projets.</p>
+    </div>
+    <div class="carousel c-qualities reveal" data-carousel aria-roledescription="carrousel" aria-label="Qualités professionnelles">
+      <div class="c-stage">
+        <article class="c-slide"><div class="slide-body"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-bulb"/></svg></span><h3>Résolution de problèmes</h3><p>Partir du besoin réel pour trouver la solution adaptée.</p></div></article>
+        <article class="c-slide"><div class="slide-body"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-gear"/></svg></span><h3>Rigueur technique</h3><p>Un travail soigné, structuré et maintenable.</p></div></article>
+        <article class="c-slide"><div class="slide-body"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-net"/></svg></span><h3>Adaptabilité</h3><p>S’ajuster aux contextes, aux outils et aux contraintes.</p></div></article>
+        <article class="c-slide"><div class="slide-body"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-team"/></svg></span><h3>Collaboration</h3><p>Travailler en équipe pour atteindre des solutions efficaces.</p></div></article>
+      </div>
+      <div class="c-ctrl">
+        <button class="icon-btn c-prev" type="button" aria-label="Qualité précédente"><svg class="ico"><use href="#i-left"/></svg></button>
+        <div class="c-dots" role="tablist" aria-label="Choisir une qualité"></div>
+        <button class="icon-btn c-next" type="button" aria-label="Qualité suivante"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPÉTENCES ============ -->
+<section id="competences" class="section section-alt" aria-labelledby="h-skills">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-skills" class="h2">Compétences</h2><p class="lead">Touchez une carte pour la retourner et lire les compétences.</p></header>
+    <div class="flips">
+      <div class="flip reveal" role="button" tabindex="0" aria-expanded="false" aria-label="Développement web : afficher les compétences">
+        <div class="flip-in">
+          <div class="face front"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-code"/></svg></span><h3>Développement web</h3><span class="flip-hint"><svg class="ico"><use href="#i-flip"/></svg>Toucher pour retourner</span></div>
+          <div class="face back"><h3>Développement web</h3><ul><li>Interfaces web modernes et responsives (HTML5, CSS3, JavaScript)</li><li>Design et intégration d’interfaces (Tailwind CSS, Bootstrap)</li><li>Applications web sur mesure pour les entreprises</li><li>Sites vitrines et institutionnels orientés performance et référencement</li><li>Plateformes e-commerce et produits digitaux</li><li>Chatbots et automatisation via WhatsApp</li></ul></div>
+        </div>
+      </div>
+      <div class="flip reveal" role="button" tabindex="0" aria-expanded="false" aria-label="Systèmes et réseaux : afficher les compétences">
+        <div class="flip-in">
+          <div class="face front"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-net"/></svg></span><h3>Systèmes et réseaux</h3><span class="flip-hint"><svg class="ico"><use href="#i-flip"/></svg>Toucher pour retourner</span></div>
+          <div class="face back"><h3>Systèmes et réseaux</h3><ul><li>Réseaux informatiques</li><li>Infrastructures informatiques</li></ul></div>
+        </div>
+      </div>
+      <div class="flip reveal" role="button" tabindex="0" aria-expanded="false" aria-label="Maintenance informatique : afficher les compétences">
+        <div class="flip-in">
+          <div class="face front"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-gear"/></svg></span><h3>Maintenance informatique</h3><span class="flip-hint"><svg class="ico"><use href="#i-flip"/></svg>Toucher pour retourner</span></div>
+          <div class="face back"><h3>Maintenance informatique</h3><ul><li>Configuration et maintenance informatique</li><li>Diagnostic et résolution de problèmes techniques</li><li>Installation et assistance informatique</li></ul></div>
+        </div>
+      </div>
+      <div class="flip reveal" role="button" tabindex="0" aria-expanded="false" aria-label="Gestion informatique : afficher les compétences">
+        <div class="flip-in">
+          <div class="face front"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-board"/></svg></span><h3>Gestion informatique</h3><span class="flip-hint"><svg class="ico"><use href="#i-flip"/></svg>Toucher pour retourner</span></div>
+          <div class="face back"><h3>Gestion informatique</h3><ul><li>IT Management</li><li>Coordination de projets informatiques</li><li>Analyse des besoins</li></ul></div>
+        </div>
+      </div>
+      <div class="flip reveal" role="button" tabindex="0" aria-expanded="false" aria-label="Consultant informatique : afficher les compétences">
+        <div class="flip-in">
+          <div class="face front"><span class="ico-box ico-lg"><svg class="ico"><use href="#i-bulb"/></svg></span><h3>Consultant informatique</h3><span class="flip-hint"><svg class="ico"><use href="#i-flip"/></svg>Toucher pour retourner</span></div>
+          <div class="face back"><h3>Consultant informatique</h3><ul><li>Conseil et accompagnement technique</li><li>Choix de solutions technologiques</li><li>Amélioration des systèmes informatiques</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (carrousel 3D) ============ -->
+<section id="services" class="section" aria-labelledby="h-serv">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-serv" class="h2">Services</h2><p class="lead">Faites défiler les cartes pour découvrir chaque prestation.</p></header>
+    <div class="carousel c-services reveal" data-carousel aria-roledescription="carrousel" aria-label="Services">
+      <div class="c-stage">
+        <article class="c-slide"><div class="slide-body">
+          <span class="ico-box ico-lg"><svg class="ico"><use href="#i-globe"/></svg></span>
+          <h3>Création de sites internet</h3>
+          <p>Conception de sites vitrines, institutionnels et professionnels, avec une attention particulière portée au design, à la performance et au référencement.</p>
+          <a href="#" class="link" data-wa data-topic="Création de sites internet">Discuter de ce service</a></div></article>
+        <article class="c-slide"><div class="slide-body">
+          <span class="ico-box ico-lg"><svg class="ico"><use href="#i-app"/></svg></span>
+          <h3>Développement d’applications web</h3>
+          <p>Création d’applications web interactives, adaptées aux besoins opérationnels des entreprises.</p>
+          <a href="#" class="link" data-wa data-topic="Développement d’applications web">Discuter de ce service</a></div></article>
+        <article class="c-slide"><div class="slide-body">
+          <span class="ico-box ico-lg"><svg class="ico"><use href="#i-net"/></svg></span>
+          <h3>Réseaux et assistance informatique</h3>
+          <p>Installation, configuration, maintenance et résolution de problèmes liés aux infrastructures informatiques, selon le périmètre des prestations proposées.</p>
+          <a href="#" class="link" data-wa data-topic="Réseaux et assistance informatique">Discuter de ce service</a></div></article>
+        <article class="c-slide"><div class="slide-body">
+          <span class="ico-box ico-lg"><svg class="ico"><use href="#i-bulb"/></svg></span>
+          <h3>Conseil informatique</h3>
+          <p>Accompagnement dans le choix des solutions technologiques et l’amélioration des systèmes informatiques.</p>
+          <a href="#" class="link" data-wa data-topic="Conseil informatique">Discuter de ce service</a></div></article>
+        <article class="c-slide"><div class="slide-body">
+          <span class="ico-box ico-lg"><svg class="ico"><use href="#i-board"/></svg></span>
+          <h3>Gestion de projets informatiques</h3>
+          <p>Organisation, coordination et suivi des projets, en tenant compte des besoins, des priorités et des objectifs.</p>
+          <a href="#" class="link" data-wa data-topic="Gestion de projets informatiques">Discuter de ce service</a></div></article>
+      </div>
+      <div class="c-ctrl">
+        <button class="icon-btn c-prev" type="button" aria-label="Carte précédente"><svg class="ico"><use href="#i-left"/></svg></button>
+        <div class="c-dots" role="tablist" aria-label="Choisir une carte"></div>
+        <button class="icon-btn c-next" type="button" aria-label="Carte suivante"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS (carrousel 3D) ============ -->
+<section id="projets" class="section section-alt" aria-labelledby="h-proj">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-proj" class="h2">Projets et réalisations</h2><p class="lead">Glissez, utilisez les flèches ou le clavier pour parcourir les projets.</p></header>
+    <div class="carousel c-projects reveal" data-carousel="ring" aria-roledescription="carrousel" aria-label="Projets">
+      <div class="c-stage">
+
+        <article class="c-slide"><div class="slide-body">
+          <div class="shot"><span class="shot-ph"><svg class="ico"><use href="#i-bank"/></svg>Capture à ajouter<small>assets/images/chatbot-whatsapp.jpg</small></span>
+            <img src="assets/images/chatbot-whatsapp.jpg" alt="Aperçu du chatbot WhatsApp pour services financiers" loading="lazy" onerror="this.remove()"></div>
+          <p class="cat">Chatbot / Services financiers</p>
+          <h3>Chatbot WhatsApp pour l’automatisation des services financiers</h3>
+          <p>Projet de soutenance, dans le contexte de BGFI Bank : automatiser certains services financiers grâce à un chatbot intégré à WhatsApp.</p>
+          <ul class="tags"><li>WhatsApp</li></ul>
+        </div></article>
+
+        <article class="c-slide"><div class="slide-body">
+          <div class="shot"><span class="shot-ph"><svg class="ico"><use href="#i-bag"/></svg>Capture à ajouter<small>assets/images/digitgpl.jpg</small></span>
+            <img src="assets/images/digitgpl.jpeg" alt="Capture du site DigitGPL" loading="lazy" onerror="this.remove()"></div>
+          <p class="cat">E-commerce / Produits digitaux</p>
+          <h3>DigitGPL</h3>
+          <p>Site de vente de produits digitaux, pensé autour du commerce numérique et d’une expérience d’achat claire.</p>
+          <a class="btn btn-primary btn-sm" href="https://digitgpl.com" target="_blank" rel="noopener noreferrer">Voir le projet<svg class="ico"><use href="#i-ext"/></svg></a>
+        </div></article>
+
+        <article class="c-slide"><div class="slide-body">
+          <div class="shot"><span class="shot-ph"><svg class="ico"><use href="#i-globe"/></svg>Capture à ajouter<small>assets/images/otyche.jpg</small></span>
+            <img src="assets/images/otyche.png" alt="Capture du site Otyche" loading="lazy" onerror="this.remove()"></div>
+          <p class="cat">Site d’entreprise / Ingénierie informatique</p>
+          <h3>Otyche</h3>
+          <p>Site web réalisé pour une entreprise d’ingénierie informatique, qui présente l’entreprise et ses services.</p>
+          <a class="btn btn-primary btn-sm" href="https://otyche.com" target="_blank" rel="noopener noreferrer">Voir le projet<svg class="ico"><use href="#i-ext"/></svg></a>
+        </div></article>
+
+        <article class="c-slide"><div class="slide-body">
+          <div class="shot"><span class="shot-ph"><svg class="ico"><use href="#i-bag"/></svg>Capture à ajouter<small>assets/images/dizonli.jpg</small></span>
+            <img src="assets/images/dizonli.png" alt="Capture du site Dizonli" loading="lazy" onerror="this.remove()"></div>
+          <p class="cat">Marche </p>
+          <h3>Dizonli</h3>
+          <p>Site web lié d'une application mobile gratuite qui transforme la marche en activité sociale et communautaire en comptant les pas.</p>
+          <a class="btn btn-primary btn-sm" href="https://dizonli.com" target="_blank" rel="noopener noreferrer">Voir le projet<svg class="ico"><use href="#i-ext"/></svg></a>
+        </div></article>
+
+        <article class="c-slide"><div class="slide-body">
+          <div class="shot"><span class="shot-ph"><svg class="ico"><use href="#i-plus"/></svg>Emplacement libre<small>Ajoutez un projet ici</small></span></div>
+          <p class="cat">Collaborations / BeTogether</p>
+          <h3>Autres réalisations</h3>
+          <p>D’autres projets, notamment ceux menés avec BeTogether, seront présentés ici. Dupliquez cette carte pour en ajouter.</p>
+          <a class="btn btn-ghost btn-sm" href="#contact">Proposer un projet</a>
+        </div></article>
+      </div>
+      <div class="c-ctrl">
+        <button class="icon-btn c-prev" type="button" aria-label="Projet précédent"><svg class="ico"><use href="#i-left"/></svg></button>
+        <div class="c-dots" role="tablist" aria-label="Choisir un projet"></div>
+        <button class="icon-btn c-next" type="button" aria-label="Projet suivant"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPÉRIENCE ============ -->
+<section id="experience" class="section" aria-labelledby="h-exp">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-exp" class="h2">Expérience et collaboration</h2></header>
+    <div class="grid2">
+      <article class="card row reveal"><span class="ico-box"><svg class="ico"><use href="#i-case"/></svg></span><div><h3>IT Manager</h3><p>Pilotage des besoins informatiques, coordination et accompagnement technique.</p></div></article>
+      <article class="card row reveal"><span class="ico-box"><svg class="ico"><use href="#i-team"/></svg></span><div><h3>Collaboration avec BeTogether</h3><p>Travail en équipe avec l’entreprise BeTogether sur la réalisation de projets.</p></div></article>
+      <article class="card row reveal"><span class="ico-box"><svg class="ico"><use href="#i-bulb"/></svg></span><div><h3>Conception de solutions numériques</h3><p>De l’analyse du besoin à la réalisation technique, pour des usages concrets.</p></div></article>
+      <article class="card row reveal"><span class="ico-box"><svg class="ico"><use href="#i-app"/></svg></span><div><h3>Projets informatiques</h3><p>Implication dans le développement de projets web, logiciels et systèmes.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-alt" aria-labelledby="h-contact">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2 id="h-contact" class="h2">Contact</h2><p class="lead">Choisissez comment me contacter : le formulaire correspondant s’affiche, votre message est prérempli.</p></header>
+    <div class="choose reveal" role="group" aria-label="Choisir le moyen de contact">
+      <button class="btn btn-primary" type="button" data-choose="mail" aria-controls="formMail" aria-pressed="false"><svg class="ico"><use href="#i-mail"/></svg>Contacter par e-mail</button>
+      <button class="btn btn-wa" type="button" data-choose="wa" aria-controls="formWa" aria-pressed="true"><svg class="ico"><use href="#i-wa"/></svg>Contacter via WhatsApp</button>
+    </div>
+    <div class="contact-grid">
+      <div class="forms reveal">
+      <form id="formMail" class="card form" novalidate hidden aria-label="Contacter par e-mail">
+        <h3 class="form-title">Contacter par e-mail</h3>
+        <div class="f-row">
+          <div class="field"><label for="m-nom">Nom <span aria-hidden="true">*</span></label><input id="m-nom" name="nom" type="text" autocomplete="family-name" required><p class="err" role="alert"></p></div>
+          <div class="field"><label for="m-prenom">Prénom <span aria-hidden="true">*</span></label><input id="m-prenom" name="prenom" type="text" autocomplete="given-name" required><p class="err" role="alert"></p></div>
+        </div>
+        <div class="field"><label for="m-email">Adresse e-mail <span aria-hidden="true">*</span></label><input id="m-email" name="email" type="email" autocomplete="email" required><p class="err" role="alert"></p></div>
+        <div class="field"><label for="m-sujet">Sujet <span aria-hidden="true">*</span></label><input id="m-sujet" name="sujet" type="text" required><p class="err" role="alert"></p></div>
+        <div class="field"><label for="m-message">Message <span aria-hidden="true">*</span></label><textarea id="m-message" name="message" rows="5" required></textarea><p class="err" role="alert"></p></div>
+        <button class="btn btn-primary btn-block" type="submit"><svg class="ico"><use href="#i-mail"/></svg>Continuer par e-mail</button>
+        <p class="note"><svg class="ico"><use href="#i-info"/></svg><span>Cliquer ouvre votre application de messagerie avec le message prérempli. Vous devez appuyer sur Envoyer dans votre messagerie pour confirmer l’envoi.</span></p>
+        <p class="ok" role="status"></p>
+      </form>
+      <form id="formWa" class="card form" novalidate hidden aria-label="Contacter via WhatsApp">
+        <h3 class="form-title">Contacter via WhatsApp</h3>
+        <div class="f-row">
+          <div class="field"><label for="w-nom">Nom <span aria-hidden="true">*</span></label><input id="w-nom" name="nom" type="text" autocomplete="family-name" required><p class="err" role="alert"></p></div>
+          <div class="field"><label for="w-prenom">Prénom <span aria-hidden="true">*</span></label><input id="w-prenom" name="prenom" type="text" autocomplete="given-name" required><p class="err" role="alert"></p></div>
+        </div>
+        <div class="field"><label for="w-email">Adresse e-mail <span aria-hidden="true">*</span></label><input id="w-email" name="email" type="email" autocomplete="email" required><p class="err" role="alert"></p></div>
+        <div class="field"><label for="w-sujet">Sujet <span aria-hidden="true">*</span></label><input id="w-sujet" name="sujet" type="text" required><p class="err" role="alert"></p></div>
+        <div class="field"><label for="w-message">Message <span aria-hidden="true">*</span></label><textarea id="w-message" name="message" rows="5" required></textarea><p class="err" role="alert"></p></div>
+        <button class="btn btn-wa btn-block" type="submit"><svg class="ico"><use href="#i-wa"/></svg>Continuer sur WhatsApp</button>
+        <p class="note"><svg class="ico"><use href="#i-info"/></svg><span>Cliquer ouvre WhatsApp avec votre message prérempli. Vous devez appuyer sur Envoyer dans WhatsApp pour confirmer l’envoi.</span></p>
+        <p class="ok" role="status"></p>
+      </form>
+    </div>
+
+      <aside class="card coords reveal" aria-label="Coordonnées">
+        <h3>Coordonnées</h3>
+        <p class="who">Sozehoue Kocou Jules</p>
+        <ul class="clist">
+          <li><span class="ico-box"><svg class="ico"><use href="#i-mail"/></svg></span><a href="mailto:julessozehoue223@gmail.com">julessozehoue223@gmail.com</a></li>
+        </ul>
+        <h4>Téléphone et WhatsApp</h4>
+        <ul class="clist" id="phones"></ul>
+        <h4>Réseaux sociaux</h4>
+        <ul class="socials">
+          <li><a href="#" class="soc" data-social="facebook" aria-label="Facebook : Jules Bezos"><svg class="ico"><use href="#i-fb"/></svg></a></li>
+          <li><a href="#" class="soc" data-social="instagram" aria-label="Instagram : @code_crafter2.0"><svg class="ico"><use href="#i-ig"/></svg></a></li>
+          <li><a href="#" class="soc" data-social="linkedin" aria-label="LinkedIn"><svg class="ico"><use href="#i-in"/></svg></a></li>
+        </ul>
+        <p class="hint">Facebook : Jules Bezos · Instagram : @code_crafter2.0 · LinkedIn</p>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-name">Sozehoue Kocou Jules</p>
+      <p class="foot-p">Ingénieur en systèmes informatiques et logiciels, développeur web et IT Manager.</p>
+      <ul class="socials"><li><a href="#" class="soc" data-social="facebook" aria-label="Facebook"><svg class="ico"><use href="#i-fb"/></svg></a></li><li><a href="#" class="soc" data-social="instagram" aria-label="Instagram"><svg class="ico"><use href="#i-ig"/></svg></a></li><li><a href="#" class="soc" data-social="linkedin" aria-label="LinkedIn"><svg class="ico"><use href="#i-in"/></svg></a></li><li><a href="#" class="soc" data-wa aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a></li></ul>
+    </div>
+    <nav aria-label="Pied de page"><p class="foot-h">Navigation</p>
+      <ul class="foot-links"><li><a href="#accueil">Accueil</a></li><li><a href="#apropos">À propos</a></li><li><a href="#competences">Compétences</a></li><li><a href="#services">Services</a></li><li><a href="#projets">Projets</a></li><li><a href="#experience">Expérience</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <div><p class="foot-h">Contact</p>
+      <ul class="foot-links"><li><a href="mailto:julessozehoue223@gmail.com">julessozehoue223@gmail.com</a></li><li><a href="tel:+2290169368440">+229 01 69 36 84 40</a></li><li><a href="tel:+2290158351520">+229 01 58 35 15 20</a></li><li><a href="tel:+2347025872630">+234 702 587 2630</a></li></ul></div>
+  </div>
+  <div class="wrap foot-bottom"><p>© <span id="year"></span> Sozehoue Kocou Jules. Tous droits réservés.</p></div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Retour en haut de page"><svg class="ico"><use href="#i-up"/></svg></button>
+<script src="js/script.js"></script>
+</body>
+</html>
